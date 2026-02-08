@@ -1,18 +1,3 @@
-<header>
-		<img src="../images/shape_up_logo.png" alt="Shape Up logo">
-		<h2>Shape Up!</h2>
-		<h3>Find the best fit for you</h3>
-</header>
-<nav id="main_nav">
-  	    <ul>
-    	    <li><a href="../index.html">Home</a></li>
-    	    <li><a href="index.html" class="current">Strength Training</a></li>
-    	    <li><a href="../cardio/index.html">Cardio Exercises</a></li>
-    	    <li><a href="../stress/index.html">Stress Relief</a></li>
-    	    <li><a href="../diet/index.html">Healthy Diets</a></li>
-	    </ul>
-</nav>	
-<main>
         <section>
             <h1>Strength training</h1>
             <p>Strength training is a type of physical exercise that uses resistance to induce muscular contraction. This builds the strength, anaerobic endurance, and size of skeletal muscles.</p>
@@ -30,5 +15,8 @@
 		    <p>Training commonly uses the technique of progressively increasing the force output of the muscle through incremental weight increases. It uses a variety of exercises and types of equipment to target specific muscle groups.</p>
             <p>Some sports where strength training is central are bodybuilding, weightlifting, shotput, discus throw, and javelin throw. Many other sports use strength training as part of their training regimen. These include tennis, American football, wrestling, track and field, rowing, lacrosse, basketball, hockey, wrestling, and soccer.</p> 
 		</section>
-</main>
-	
+
+
+
+			<h3>Additional information</h3>
+			<p>Want to start a strength training regimen? Send us an email or call us, and we'll send you our complimentary strength training program.</p>	
