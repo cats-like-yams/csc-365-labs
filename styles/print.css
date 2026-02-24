@@ -1,0 +1,38 @@
+/*Karen Bojorquez Gil*/
+
+@media print {
+
+  nav, audio, video, section h3 {
+    display: none !important;
+  }
+
+  body {
+    font-family: "Times New Roman", Times, serif !important;
+  }
+
+  h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  body {
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+  }
+
+  main {
+    flex-direction: column !important;
+  }
+
+  main aside:first-of-type {
+    order: 2;
+  }
+
+  main section {
+    order: 1;
+  }
+
+  main aside:last-of-type {
+    order: 3;
+  }
+}
