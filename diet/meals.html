@@ -72,12 +72,36 @@
 						<option value="female">Female</option>
 						<option value="male">Male</option>
 						<option value="prefer_not_to_say">Prefer not to say</option>
+					</select>
 				</fieldset>
 
 				<fieldset>
 					<legend>Lifestyle and goals</legend>
-				</fieldset>
 
+					<label for="activity_level">*Activity level</label>
+					<p>Which currently matches your lifestyle?</p>
+
+					<input type="radio" id="sedentary" name="activity_level" value="sedentary">
+					<label for="sedentary">Sedentary</label>&nbsp;&nbsp;
+
+					<input type="radio" id="moderate" name="activity_level" value="moderate">
+					<label for="moderate">Moderate</label>&nbsp;&nbsp;
+
+					<input type="radio" id="active" name="activity_level" value="active">
+					<label for="active">Active</label>
+
+					<p>What are your weight goals?</p>
+
+					<input type="radio" id="lose" name="goal" value="lose">
+					<label for="lose">Lose weight</label>&nbsp;&nbsp;
+
+					<input type="radio" id="maintain" name="goal" value="maintain">
+					<label for="maintain">Maintain weight</label>&nbsp;&nbsp;
+
+					<input type="radio" id="gain" name="goal" value="gain">
+					<label for="gain">Gain weight</label>
+				</fieldset>
+				
 				<fieldset>
 					<legend>Food preferences and restrictions</legend>
 				</fieldset>
