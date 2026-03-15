@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Shape Up! | Meals </title>
+	<title>Shape Up! | Meals</title>
 	<link href="../styles/main.css" rel="stylesheet">
 	<link  href="../styles/meals.css" rel="stylesheet">
 </head>
@@ -21,11 +21,11 @@
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="../strength/index.html">Strength Training</a></li>
 				<li><a href="../cardio/index.html">Cardio Exercises</a></li>
-				<li><a href="/stress/index.html">Stress Relief &#9660;</a>
+				<li><a href="../stress/index.html">Stress Relief &#9660;</a>
 					<ul>
 						<li><a href="../stress/tips.html">5 Helpful Tips</a></li>
 						<li><a href="../stress/meditate.html">Meditation</a></li>
-						<li><a href="/stress/vipassana.html">Vipassana</a></li>
+						<li><a href="../stress/vipassana.html">Vipassana</a></li>
 					</ul>
 				</li>
 
@@ -54,10 +54,10 @@
 		<section>
 			<h1>Meal Plan Order Form</h1>
 			<p>
-				Fill out the form as completely as possible and we will email you a weekly meal plan, customaized for you &mdash; <em>your</em> lifestyle, <em>your</em> goals, and <em>your</em> personal needs. (Asterisks (*) indicate required entries.)
+				Fill out the form as completely as possible and we will email you a weekly meal plan, customized for you &mdash; <em>your</em> lifestyle, <em>your</em> goals, and <em>your</em> personal needs. (Asterisks (*) indicate required entries.)
 			</p>
 
-			<form action="diet/meal_request.html" method="get">
+			<form action="meal_request.html" method="get">
 				<fieldset>
 					<legend>Tell us about yourself</legend>
 					<label for="name">*Full name</label>
@@ -81,7 +81,7 @@
 					<label for="activity_level">*Activity level</label>
 					<p>Which currently matches your lifestyle?</p>
 
-					<input type="radio" id="sedentary" name="activity_level" value="sedentary">
+					<input type="radio" id="sedentary" name="activity_level" value="sedentary" required>
 					<label for="sedentary">Sedentary</label>&nbsp;&nbsp;
 
 					<input type="radio" id="moderate" name="activity_level" value="moderate">
@@ -120,7 +120,7 @@
 
 					<input type="checkbox" id="other" name="dietary_restrictions" value="other">
 					<label for="other">Other (please explain)</label>
-					<input type="text" id="other_text" name="other_dietary_restrictions" placeholder="Please specify">
+					<textarea name="other_restrictions"></textarea>
 				</fieldset>
 
 				<fieldset>
