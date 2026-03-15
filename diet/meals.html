@@ -104,10 +104,29 @@
 				
 				<fieldset>
 					<legend>Food preferences and restrictions</legend>
+					<p>Do you have any dietary restrictions? (Select all that apply)</p>
+
+					<input type="checkbox" id="vegetarian" name="dietary_restrictions" value="vegetarian">
+					<label for="vegetarian">Vegetarian</label>&nbsp;&nbsp;
+
+					<input type="checkbox" id="gluten-free" name="dietary_restrictions" value="gluten-free">
+					<label for="gluten-free">Gluten-free</label>&nbsp;&nbsp;
+
+					<input type="checkbox" id="kosher" name="dietary_restrictions" value="kosher">
+					<label for="kosher">Kosher</label>
+
+					<input type="checkbox" id="low-salt" name="dietary_restrictions" value="low-salt">
+					<label for="low-salt">Low-salt</label>&nbsp;&nbsp;
+
+					<input type="checkbox" id="other" name="dietary_restrictions" value="other">
+					<label for="other">Other (please explain)</label>
+					<input type="text" id="other_text" name="other_dietary_restrictions" placeholder="Please specify">
 				</fieldset>
 
 				<fieldset>
 					<legend>Process your information</legend>
+					<input type="submit" value="Submit now">
+					<input type="reset" value="Start over">
 				</fieldset>
 			</form>
 		</section>
