@@ -1,4 +1,4 @@
-/*Name*/
+/*Karen Bojorquez Gil*/
 :root{
 	--accent1: steelblue;
 	--lightAccent1: lightsteelblue;
@@ -7,6 +7,11 @@
 html {
 	background-color: lightsteelblue;
 	background-image: url("../images/bg.jpeg");
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
 }
 
 h1, h2, h3, p {
@@ -52,11 +57,13 @@ nav {
 	
 	& ul {
 		background-color: var(--accent1);
-		
 		list-style-type: none;
 		padding-left: 0;
 		margin-top: 0; /*Remove white space between header and nav */
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
 	}
+
 	& ul li {
 		
 		padding: 10px 0;
@@ -88,9 +95,7 @@ nav {
 		width:240px;
 	}
 }
-main {
-	
-}
+
 section {
 	
 	padding: 25px 30px 0;
@@ -155,4 +160,40 @@ footer {
 	color:white;
 	padding: 15px 30px;
 	padding: 15px 30px;
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        font-size: 90%;
+        box-shadow: none;
+    }
+
+    header img {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        order: 1;
+    }
+
+    aside {
+        order: 2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    nav a#current {
+        border: none;
+        background-color: black;
+        color: white;
+    }
 }
