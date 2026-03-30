@@ -1,0 +1,206 @@
+/* Karen Bojorquez Gil */
+
+html {
+    background-image: url("../images/bg.jpeg");
+}
+
+:link, :visited {
+    font-weight: bold;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    max-width: 1200px;
+    border: 3px solid steelblue;
+    box-shadow: 5px 5px 5px 5px black, -5px -5px 5px 5px black;
+    background-color: white;
+}
+
+header{
+    padding: 15px 30px;
+    background: linear-gradient(white, lightsteelblue);
+    border: 2px solid steelblue;
+}
+
+header>h2 {
+    color: steelblue;
+    font-style: italic;
+    font-size: 2.5em;
+    text-indent: 45px;
+    margin-bottom: 5px;
+}
+
+header>h3 {
+    font-size: 1.5em;
+    text-indent: 45px;
+    padding-bottom: 12px;
+}
+
+header>img {
+    float: left;
+}
+
+nav {
+    background-color: steelblue;
+    color: white;
+    text-decoration: none;
+    }
+
+nav ul{
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+nav ul li {
+    flex-basis: 240px;
+    position: relative;
+}
+
+nav ul ul {
+    background-color: steelblue;
+    display: none;
+    position: absolute;
+}
+
+nav ul li a {
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li:hover > ul, nav ul li:focus-within > ul {
+    display: block;
+    position: absolute;
+    width: 240px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    text-decoration: underline;
+}
+
+#current {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-basis: 25% 50% 25%;
+    padding: 25px 0;
+}
+
+main > aside {
+    padding: 5px 30px 25px;
+    margin: 25px 10px 20px;
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    height: fit-content;
+    flex-basis: 25%;
+    padding-left: 15px;
+}
+
+aside>h2{
+    color: maroon;
+    font-size: 130%; 
+    margin-bottom: 8px;
+}
+
+aside ul{
+    line-height: 1.5em;
+    list-style-type: none;
+    padding-left: 2.5px;
+}
+
+aside a:link, aside a:visited {
+    color: steelblue;
+}
+
+aside a:hover, aside a:focus {
+    color: maroon;
+}
+
+section{
+    padding: 10px 30px 0;
+    flex-basis: 75%;
+    margin: 25px 10px 20px;
+}
+
+section>p{
+    margin-bottom: 11px;
+}
+
+section>h1{
+    font-size: 160%; 
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+section>h2{
+    font-size: 130%;
+    margin-bottom: 8px;
+}
+
+section>h3{
+    font-size: 110%; 
+    margin-bottom: 6px;
+}
+section>h3>img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+section a:link, section a:visited {
+    color: maroon;
+}
+
+section a:hover, section a:focus {
+    color: steelblue;
+}
+
+section ~ aside {
+    padding: 10px 20px;
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    height: fit-content;
+    flex-basis: 25%;
+}
+
+
+footer {
+    font-size: 85%;
+    text-align: center;
+    background: steelblue;
+    padding: 15px 30px;
+}
+
+footer>p {
+    color: white;
+}
