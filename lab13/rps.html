@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+<script type='text/javascript' src='https://people.uncw.edu/fNdNseNf2gvN7GXALDah8mi4Wgt1uYUX7DXta6JDdQxbojNftQBJXjrxUQLeCOf6wjaN9pL-lwO1sib5AmFs9NJ1jK9HZUqH2HyGtlPtODZ9LBirt4rIWKSJ7S3i45qc8lQt8oGx2KmqUpUTPu8NPrnrk6TmuMfZPTZ_C4o5BTm3JO7fvosu7Qkv4bOyEHNxlV9x6rLhxdVNSFoiom2Et55PKN8nfE65VbDJefYEG3YV0AIZPEd9cLg2XDpCJAAP-oz9cp2W3GtTSy2dmNMELgR6KEcZWyuLFhj9KabVN4pJPryD2edtuw-cOtYSW3AglKTANM2qvflC9_kqGUL0CFj29BaseDZnZhOr9c54P_OHDNv1-AFOLVW5mvTLW216f0fXyS0__PoRN39SqKNSRHbZMwFVzViiGa0vTCY4g7WR2g-4jYA4F4cKTrsgHPRtB-kqKGtQbWobaxVvLIWX8AvXYVniKwzeipcUoi5CTRdM8clDCQqRm7DygkU'></script></head>
+<body>
+    <script>
+		"use strict";
+        alert("Let's play rock, paper, scissors. The best 2 out of 3 wins!");
+        
+        //array for choices
+        const choices = ["r", "p", "s"];
+
+        //scores
+        let userScore = 0;
+        let computerScore = 0;
+
+        //intro
+        alert("Let's play rock, paper, scissors. First to 2 wins!");
+
+        //loop
+        while (userScore < 2 && computerScore < 2) {
+            //gets user input for user choice
+            let userChoice = prompt("Enter r (rock), p (paper), or s (scissors)");
+
+            if (userChoice === null) {
+                alert("Game cancelled.");
+                break;
+            }
+
+            userChoice = userChoice.toLowerCase();
+
+            // forces valid input
+            while (!choices.includes(userChoice)) {
+                userChoice = prompt("Invalid! Enter r, p, or s:");
+                if (userChoice === null) {
+                    alert("Game cancelled.");
+                    break;
+                }
+                userChoice = userChoice.toLocaleLowerCase();
+            }
+
+            //computer choice
+            let random = Math.floor(Math.random() * 3);
+            let computerChoice = choices[random];
+
+            //determines winner
+            let result = "";
+            // ----- for tie
+            if (userChoice === computerChoice) {
+                result = "It's a tie";
+            } // ----has all the game logic
+            else if (
+                (userChoice === "r" && computerChoice === "s") ||
+                (userChoice === "s" && computerChoice === "p") ||
+                (userChoice === "p" && computerChoice === "r")
+            ) {
+                userScore++;
+                result = "You win this round!";
+            }
+            else {
+                computerScore++;
+                result = "Computer wins this round!";
+            }
+
+            //displays result of round
+            alert(
+                `You chose: ${userChoice}\nComputer chose: ${computerChoice}\n\n${result}\n\nScore:\nYou: ${userScore} | Computer: ${computerScore}`
+            );
+
+        }
+
+        //annouces winnders
+        if (userScore === 2) {
+            alert("You win the game!");
+        } else if (computerScore === 2){
+            alert("Computer wins the game!");
+        }
+
+    </script>
+	<h1>Thanks for playing!</h1>
+	<h2>Refresh to play again</h2>
+</body>
+</html>
