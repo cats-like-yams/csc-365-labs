@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--Karen Bojorquez Gil-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown</title>
+	<style>h1, h2 {text-align:center;}</style>
+</head>
+<body>
+	<h1>Countdown to Blastoff</h1>
+	<h2></h2>
+    <script>
+        "use strict";
+
+        // prompts the user and converts to number
+        let userInput = Number(prompt("Enter a number to start countdown:"));
+        
+        const countDown = (time) => {
+
+            let display = document.querySelector("h2");
+
+            let timer = setInterval(() => {
+                console.log(time);
+                display.textContent = time;
+
+                time--;
+
+                if (time < 0) {
+                    clearInterval(timer);
+
+                    const finish = () => {
+                        console.log("Blast Off!");
+                        display.innerHTML = '<img src="rocket.gif" alt="Rocket">';
+                    };
+
+                    setTimeout(finish, 1000);
+                }
+
+            }, 1000);
+        };
+
+        // Call the function
+        countDown(userInput);
+    </script>
+    
+</body>
+</html>
